@@ -5,7 +5,14 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class UserManager {
+    private static UserManager instance;
     private HashMap<String,User> users = new HashMap<>();
+    public static UserManager getInstance(){
+        if(instance == null){
+            instance = new UserManager();
+        }
+        return instance;
+    }
 
     public boolean addUser(User user){
         if(user == null){return false;}

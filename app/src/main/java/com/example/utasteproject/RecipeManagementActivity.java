@@ -49,6 +49,12 @@ public class RecipeManagementActivity extends AppCompatActivity {
             name.setText(r.getName());
             desc.setText(r.getDescription());
 
+            card.setOnClickListener(v -> {
+                Intent intent = new Intent(this, RecipeDetailsActivity.class);
+                intent.putExtra("RECIPE_NAME", r.getName());
+                startActivity(intent);
+            });
+
             recipesContainer.addView(card);
         }
     }

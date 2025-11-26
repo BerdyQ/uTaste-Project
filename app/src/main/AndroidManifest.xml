@@ -17,6 +17,11 @@
         <activity android:name=".WaiterActivity" />
         <activity android:name=".RecipeManagementActivity" />
         <activity android:name=".AddRecipeActivity" />
+        <activity android:name=".UserManagementActivity" />
+        <activity android:name=".RecipeDetailsActivity" />
+        <activity android:name=".EditRecipeActivity" />
+        <activity android:name=".AddUserActivity"/>
+
         <activity
             android:name=".LoginActivity"
             android:exported="true"
