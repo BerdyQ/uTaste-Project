@@ -1,6 +1,7 @@
 package com.example.utasteproject;
 
 public class Administrator extends User{
+    //Constructor
     public Administrator(String firstName, String lastName, String email, String password) {
         super(firstName, lastName, email, password);
     }

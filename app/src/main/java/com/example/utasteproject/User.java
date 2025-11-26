@@ -9,7 +9,7 @@ abstract class User implements Authenticate{
     private String password;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
-
+    //Constructor
     public User(String firstName, String lastName, String email, String password){
         this.firstName = firstName;
         this.lastName = lastName;
@@ -18,6 +18,7 @@ abstract class User implements Authenticate{
         this.createdAt = LocalDateTime.now();
         this.updatedAt = LocalDateTime.now();
     }
+    //Getters and Setters
     public String getFirstName(){return this.firstName;}
     public String getLastName(){return this.lastName;}
     public String getEmail(){return this.email;}
