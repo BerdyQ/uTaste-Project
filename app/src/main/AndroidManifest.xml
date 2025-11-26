@@ -12,8 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.utasteproject">
 
+        <activity android:name=".AdminDashboardActivity" />
+        <activity android:name=".ChefActivity" />
+        <activity android:name=".WaiterActivity" />
         <activity
-            android:name=".MainActivity"
+            android:name=".LoginActivity"
             android:exported="true"
             android:label="@string/app_name">
             <intent-filter>
