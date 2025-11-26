@@ -5,7 +5,16 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class RecipeManager {
+    private static RecipeManager instance;
+
     private HashMap<String, Recipe> recipes = new HashMap<>();
+    private RecipeManager(){}
+    public static RecipeManager getInstance(){
+        if(instance == null){
+            instance = new RecipeManager();
+        }
+        return instance;
+    }
     public boolean addRecipe(Recipe recipe){
         if(recipe == null){return false;}
         else if(recipes.containsKey(recipe.getName())){return false;}
